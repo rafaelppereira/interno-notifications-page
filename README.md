@@ -1,7 +1,7 @@
 
-## Template Nitro HUB Frontend
+## Interno Notifications Page
 
-🟣 Esse repositório foi criado com o objetivo de já trazer uma aplicação React totalmente configurada, para apenas realizar a troca das informações necessárias.
+⚪️ Projeto criado com o objetivo de recriar uma página de notificações
 
 ## Instalação
 
