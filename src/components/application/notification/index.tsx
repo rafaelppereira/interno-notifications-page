@@ -1,13 +1,11 @@
-import { NotificationAction } from './notification.action'
-import { NotificationActions } from './notification.actions'
+import { NotificationAvatar } from './notification.avatar'
+import { NotificationComment } from './notification.comment'
 import { NotificationContent } from './notification.content'
-import { NotificationIcon } from './notification.icon'
 import { NotificationRoot } from './notification.root'
 
 export const Notification = {
   Root: NotificationRoot,
-  Icon: NotificationIcon,
-  Action: NotificationAction,
+  Avatar: NotificationAvatar,
   Content: NotificationContent,
-  Actions: NotificationActions,
+  Comment: NotificationComment,
 }

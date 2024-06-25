@@ -1,12 +1,18 @@
 import { ReactNode } from 'react'
 
 interface NotificationRootProps {
+  hasNew?: boolean
   children: ReactNode
 }
 
-export function NotificationRoot({ children }: NotificationRootProps) {
+export function NotificationRoot({
+  hasNew = false,
+  children,
+}: NotificationRootProps) {
   return (
-    <div className="flex items-start gap-6 bg-zinc-200 px-8 py-4 dark:bg-zinc-900">
+    <div
+      className={`${hasNew && 'bg-zinc-100'} flex items-start gap-6 rounded-md px-5 py-3`}
+    >
       {children}
     </div>
   )

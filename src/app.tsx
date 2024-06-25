@@ -13,7 +13,7 @@ export function App() {
       <Helmet titleTemplate="%s | Template Nitro HUB Frontend" />
       <ThemeProvider
         storageKey="template-nitro-hub-frontend"
-        defaultTheme="dark"
+        defaultTheme="light"
       >
         <QueryClientProvider client={queryClient}>
           <RouterProvider router={router} />

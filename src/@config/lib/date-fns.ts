@@ -25,6 +25,7 @@ interface DFformatDistanceProps {
 function dfFormatDistance({ date }: DFformatDistanceProps) {
   return formatDistance(new Date(date), new Date(), {
     locale: ptBR,
+    includeSeconds: true,
   })
 }
 

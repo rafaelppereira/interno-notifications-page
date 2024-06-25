@@ -1,17 +1,22 @@
+import { ReactNode } from 'react'
+
 interface NotificationContentProps {
   text: string
+  date: string
+  children?: ReactNode
 }
 
-export function NotificationContent({ text }: NotificationContentProps) {
+export function NotificationContent({
+  text,
+  date,
+  children,
+}: NotificationContentProps) {
   return (
-    <div className="flex flex-1 flex-col gap-2">
-      <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-100">
-        {text}
-      </p>
-      <div className="text-xxs flex items-center gap-2 text-zinc-400">
-        <span>Convite</span>
-        <span>Há 3 min</span>
-      </div>
+    <div className="flex flex-col gap-1">
+      <h1 className="text-md">{text}</h1>
+      <time className="text-sm text-zinc-500">{date}</time>
+
+      {children}
     </div>
   )
 }
